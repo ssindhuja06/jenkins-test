@@ -10,6 +10,7 @@ def call(body) {
         stage ('First Stage'){
             echo "This is first stage"
             writeFile file:'Dockerfile', text:libraryResource("Dockerfile")
+            sh "pwd"
             sh "ls -lrt"
         }
         stage('Second Stage'){
