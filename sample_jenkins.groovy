@@ -10,6 +10,12 @@ def call(body) {
         stage ('First Stage'){
             echo "This is first stage"
             writeFile file:'Dockerfile', text:libraryResource("Dockerfile")
+            if(fileExists('Dockerfile')){
+            echo "Dockerfile copied"
+
+       } else{
+        echo "it did not work"
+    }
             sh "pwd"
             sh "ls -lrt"
         }
