@@ -13,7 +13,8 @@ def call(body) {
 
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
-            portnumber = inputJson.vzt-cache-listener-remotecommandsrequest
+            portnumber = inputJson.port
+            echo "The port number is"
             echo "${portnumber}"
 
 
