@@ -18,10 +18,11 @@ def call(body) {
 
             Map jsonResult = (Map) inputJson
             echo "${jsonResult}"
-            def x= jsonResult.find{ it.value == "123" }?.key
+            def name jsonResult.get("123")
             //echo "${jsonResult.keySet()}"
+            echo "name is ${name}"
             echo "The port number is"
-            echo "${x}"
+            //echo "${x}"
 
 
         }
