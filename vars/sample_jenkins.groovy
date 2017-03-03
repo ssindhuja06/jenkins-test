@@ -12,7 +12,7 @@ def call(body) {
         stage ('First Stage'){
 
             writeFile file:'ports.json', text:libraryResource("/ports.json")
-            def inputJson = new JsonSlurper().parseText(port.json)
+            def inputJson = new JsonSlurper().parseText(ports.json)
             inputJson.each{ println it }
 
 
