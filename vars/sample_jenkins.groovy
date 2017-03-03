@@ -13,9 +13,9 @@ def call(body) {
 
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
-            portnumber = inputJson.port
-            Map jsonResult = (Map) portnumber
-            echo "${jsonResult.keySet()}"
+            portnumber = inputJson.123
+            //Map jsonResult = (Map) portnumber
+            //echo "${jsonResult.keySet()}"
             echo "The port number is"
             echo "${portnumber}"
 
