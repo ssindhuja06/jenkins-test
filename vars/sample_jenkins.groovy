@@ -14,7 +14,7 @@ def call(body) {
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
             portnumber = inputJson.port
-            def keys = JsonSlurper.keySet()
+            //def keys = JsonSlurper.keySet()
 
             Map jsonResult = (Map) inputJson
             def x= jsonResult.find{ it.value == "123" }?.key
