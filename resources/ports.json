@@ -1,0 +1,13 @@
+{
+    "16001": "vzt-cache-listener-remotecommandsrequest",
+    "16001": "vzt-cache-listener-remotecommandsrequest",
+    "16024": "vzt-cache-listener-alertconfigurationsrequest",
+    "16025": "vzt-cache-listener-poiivmrequest",
+    "16026": "vzt-cache-listener-svtrequest",
+    "16027": "vzt-cache-listener-remotecommandsresponse",
+    "16028": "vzt-cache-listener-alertconfigurationsresponse",
+    "16029": "vzt-cache-listener-poiivmresponse",
+    "16030": "vzt-cache-listener-svtresponse",
+    "16031": "vzt-cache-listener-callservices",
+    "16032": "vzt-cache-listener-ecallservices"
+}
