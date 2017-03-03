@@ -18,7 +18,10 @@ def call(body) {
 
             Map jsonResult = (Map) inputJson
             for (e in jsonResult){
-                print "key = ${e.key}, value =${e.value}"
+               // print "key = ${e.key}, value =${e.value}"
+                if("${e.value}" == "123"){
+                    print "the key is ${e.key}"
+                }
             }
         /*    jsonResult.each{
                 if(value == "123"){
