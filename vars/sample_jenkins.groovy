@@ -14,14 +14,22 @@ def call(body) {
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
             portnumber = inputJson.port
-            //def keys = JsonSlurper.keySet()
+           // def keys = JsonSlurper.keySet()
 
             Map jsonResult = (Map) inputJson
-            echo "${jsonResult}"
-            def name = jsonResult.get("123")
+            for (e in jsonResult){
+                print "key = ${e.key}, value =${e.value}"
+            }
+        /*    jsonResult.each{
+                if(value == "123"){
+                    print key
+                }
+            } */
+         //   echo "${jsonResult}"
+            //def name = jsonResult.get("123")
             //echo "${jsonResult.keySet()}"
-            echo "name is ${name}"
-            echo "The port number is"
+         //   echo "name is ${name}"
+         //   echo "The port number is"
             //echo "${x}"
 
 
