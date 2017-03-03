@@ -17,6 +17,7 @@ def call(body) {
             //def keys = JsonSlurper.keySet()
 
             Map jsonResult = (Map) inputJson
+            echo "${jsonResult}"
             def x= jsonResult.find{ it.value == "123" }?.key
             //echo "${jsonResult.keySet()}"
             echo "The port number is"
