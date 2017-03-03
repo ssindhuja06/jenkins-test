@@ -11,8 +11,8 @@ def call(body) {
     node {
         stage ('First Stage'){
 
-            writeFile file:'newports.text', text:libraryResource("/ports.json")
-            def inputJson = new JsonSlurper().parseText(newports.text)
+            //writeFile file:'newports.text', text:libraryResource("/ports.json")
+            def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
             inputJson.each{ println it }
 
 
