@@ -14,7 +14,7 @@ def call(body) {
             def xname = "${config.name}"
             echo "${xname}"
 
-            if ("${xname}" == null){
+            if ("${config.name}" == null){
                 echo "null value passed"
                 xname = "master"
                 echo "${xname}"
