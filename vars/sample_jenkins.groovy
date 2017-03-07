@@ -19,6 +19,10 @@ def call(body) {
                 echo "myVal is null"
             }
 
+            if( xname == null){
+                echo "xname is null"
+            }
+
             if ("${config.name}" == null){
                 echo "null value passed"
                 xname = "master"
