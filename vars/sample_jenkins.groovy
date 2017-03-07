@@ -11,9 +11,12 @@ def call(body) {
     node {
         stage ('First Stage'){
 
+            def xname = "${config.name}"
+            echo "${xname}"
+/*
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
-            portnumber = inputJson.port
+           // portnumber = inputJson.port
            // def keys = JsonSlurper.keySet()
 
             Map jsonResult = (Map) inputJson
@@ -21,20 +24,21 @@ def call(body) {
                // print "key = ${e.key}, value =${e.value}"
                 if("${e.value}" == "123"){
                     print "the key is ${e.key}"
+                    
                 }
             }
-        /*    jsonResult.each{
-                if(value == "123"){
-                    print key
-                }
-            } */
+            //jsonResult.each{
+              //  if(value == "123"){
+               //     print key
+               // }
+           // } 
          //   echo "${jsonResult}"
             //def name = jsonResult.get("123")
             //echo "${jsonResult.keySet()}"
          //   echo "name is ${name}"
          //   echo "The port number is"
             //echo "${x}"
-
+*/
 
         }
         stage('Second Stage'){

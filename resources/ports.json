@@ -1,5 +1,5 @@
 {
-    "port": "123",
+    "123": "service1",
     "16001": "vzt-cache-listener-remotecommandsrequest",
     "16001": "vzt-cache-listener-remotecommandsrequest",
     "16024": "vzt-cache-listener-alertconfigurationsrequest",
