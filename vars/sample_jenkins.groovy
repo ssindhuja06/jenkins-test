@@ -13,11 +13,15 @@ def call(body) {
 
             echo "${config.name}"
 
-            if (!"${config.name}"){
+            if ("${config.name}"){
                 echo "the param is null"
             }
 
             def xname = "${config.name}"
+
+            if (xname?.empty){
+                echo "hellooooo"
+            }
             echo "${xname}"
             def myVal = null
 
