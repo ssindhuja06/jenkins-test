@@ -13,6 +13,10 @@ def call(body) {
 
             echo "${config.name}"
 
+            if ("${config.name}" == null){
+                print "the param is null"
+            }
+
             def xname = "${config.name}"
             echo "${xname}"
             def myVal = null
