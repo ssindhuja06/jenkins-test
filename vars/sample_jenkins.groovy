@@ -15,6 +15,7 @@ def call(body) {
             echo "${xname}"
 
             if (xname == null){
+                echo "null value passed"
                 xname == "master"
                 echo "${xname}"
             }
