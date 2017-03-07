@@ -16,7 +16,7 @@ def call(body) {
 
             if ("${xname}" == null){
                 echo "null value passed"
-                xname == "master"
+                xname = "master"
                 echo "${xname}"
             }
             echo "outside if"
