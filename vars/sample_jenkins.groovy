@@ -11,9 +11,7 @@ def call(body) {
     node {
         stage ('First Stage'){
 
-            if ("${config.name}" == null){
-                echo "config is null"
-            }
+            echo "${config.name}"
 
             def xname = "${config.name}"
             echo "${xname}"
