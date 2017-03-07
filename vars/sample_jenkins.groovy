@@ -25,7 +25,7 @@ def call(body) {
                 echo "myVal is null"
             }
 
-            if( xname == null){
+            if(!xname){
                 echo "xname is null"
             }
 
