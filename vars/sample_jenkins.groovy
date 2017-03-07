@@ -13,7 +13,7 @@ def call(body) {
 
             echo "${config.name}"
 
-            if ("${config.name}" == null){
+            if (!"${config.name}"){
                 echo "the param is null"
             }
 
