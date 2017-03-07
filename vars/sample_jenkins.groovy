@@ -13,6 +13,11 @@ def call(body) {
 
             def xname = "${config.name}"
             echo "${xname}"
+
+            if (xname == null){
+                xname == "master"
+                echo "${xname}"
+            }
 /*
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
