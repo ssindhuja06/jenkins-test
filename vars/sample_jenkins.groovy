@@ -19,6 +19,7 @@ def call(body) {
                 xname == "master"
                 echo "${xname}"
             }
+            echo "outside if"
 /*
             //writeFile file:'newports.text', text:libraryResource("/ports.json")
             def inputJson = new JsonSlurper().parseText(libraryResource("/ports.json"))
